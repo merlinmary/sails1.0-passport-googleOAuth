@@ -130,5 +130,6 @@ lib-cov
 *.out
 *.pid
 
-config/auth.js
+
+
 
