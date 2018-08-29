@@ -7,7 +7,7 @@
 var passport = require('passport');
 module.exports = {
 
-  login: async (req, res) => {
+  login: async function (req, res) {
       await passport.authenticate('google', {
         scope: ['email', 'profile']
       })(req, res);
