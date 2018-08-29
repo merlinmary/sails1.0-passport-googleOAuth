@@ -16,8 +16,6 @@ module.exports = {
     callback: async function (req, res) {
         passport.authenticate('google', {
           scope: ['email', 'profile'],
-          failureRedirect: '/users/login',
-          successRedirect: 'http://google.com'
         }, function (error, response) {
           if (error) {
             return res.status(400).json({
